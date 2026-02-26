@@ -24,6 +24,7 @@ Each folder represents a standalone mini project.
 go-mini-projects/
 │
 ├── 01-inventory-api/
+├── 02-crud-database/
 └── ...
 ```
 

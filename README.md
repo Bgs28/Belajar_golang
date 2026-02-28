@@ -53,7 +53,7 @@ go-mini-projects/
 * Proper error handling
 * SQL queries from Go
 
-## 4️⃣ Authentication with JWT (Coming Soon)
+## 4️⃣ Authentication with JWT
 
 * User registration & login
 * Password hashing

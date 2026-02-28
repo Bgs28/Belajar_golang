@@ -24,6 +24,7 @@ Each folder represents a standalone mini project.
 go-mini-projects/
 │
 ├── 01-inventory-api/
+├── 02-crud-database/
 └── ...
 ```
 
@@ -45,7 +46,7 @@ go-mini-projects/
 * URL parameter parsing
 * Basic project structure separation
 
-## 3️⃣ CRUD with Database (Coming Soon)
+## 3️⃣ CRUD with Database
 
 * MySQL/PostgreSQL integration
 * `database/sql`

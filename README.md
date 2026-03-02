@@ -25,6 +25,7 @@ go-mini-projects/
 │
 ├── 01-inventory-api/
 ├── 02-crud-database/
+├── 03-auth_api/
 └── ...
 ```
 
@@ -32,13 +33,13 @@ go-mini-projects/
 
 # 📌 Mini Projects List
 
-## 1️⃣ Basic HTTP Server
+## 1️ Basic HTTP Server
 
 * Simple HTTP server using `net/http`
 * Routing with `http.HandleFunc`
 * Understanding request & response lifecycle
 
-## 2️⃣ Inventory REST API
+## 2️ Inventory REST API
 
 * REST API with GET, POST, DELETE
 * JSON encoding/decoding
@@ -46,34 +47,41 @@ go-mini-projects/
 * URL parameter parsing
 * Basic project structure separation
 
-## 3️⃣ CRUD with Database
+## 3 CRUD with Database
 
 * MySQL/PostgreSQL integration
 * `database/sql`
 * Proper error handling
 * SQL queries from Go
 
-## 4️⃣ Authentication with JWT (Coming Soon)
+## 4️ Authentication with JWT
 
 * User registration & login
 * Password hashing
 * JWT token generation & validation
 * Middleware implementation
 
-## 5️⃣ Concurrency Playground (Coming Soon)
+## 5️ Mini Web (register & login user)
+
+* User registration & login (with website page)
+* Using JWT token generation and validation(login)
+* Using password Hasihing(register)
+* 
+
+## 6 Concurrency Playground (Coming Soon)
 
 * Goroutines
 * Channels
 * WaitGroup
 * Worker pools
 
-## 6️⃣ Automation API (Coming Soon)
+## 7 Automation API (Coming Soon)
 
 * File processing
 * CSV analysis
 * Background task handling
 
-## 7️⃣ Web3 Go Projects (Future Goal)
+## 8 Web3 Go Projects (Future Goal)
 
 * Blockchain interaction using Go
 * Smart contract integration

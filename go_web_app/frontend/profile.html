@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #eef2f7;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-top: 20px;
+    }
+
+    p {
+      margin: 10px 20px;
+      font-size: 16px;
+    }
+
+    textarea {
+      width: 90%;
+      max-width: 600px;
+      margin: 10px auto;
+      display: block;
+      padding: 12px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <body>
+    <h2>Profile Page</h2>
+
+    <p><strong>Email: </strong> {{.Email}}</p>
+    <p><strong>JWT Token:</strong></p>
+    <textarea rows="6" cols="80">{{.Token}}</textarea>
+
+    <br /><br />
+
+    <form action="/logout" method="post">
+      <button type="submit">Logout</button>
+    </form>
+  </body>
+</html>

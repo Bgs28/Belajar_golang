@@ -25,6 +25,7 @@ go-mini-projects/
 │
 ├── 01-inventory-api/
 ├── 02-crud-database/
+├── 03-auth_api/
 └── ...
 ```
 

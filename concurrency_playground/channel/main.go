@@ -32,6 +32,12 @@ func main() {
 	// ch <- 2
 	// ch <- 3
 
+	/* >> close menandakan tidak ada lagi data yang akan dikrim melalui channel
+	>> hanya sender yang bisa menutup channel
+	>> tidak boleh mengirim data ke channel yang sudah ditutup
+	>> receiver masih bisa membaca sampai data habis (nilai terakhir 0 karena channel sudah kosong dan tertutup)
+	*/
+
 	// close(ch)
 
 	// for v := range ch {
@@ -74,12 +80,16 @@ func main() {
 	// fmt.Println(message)
 	// fmt.Println(message2)
 
-	ch := make(chan int, 2)
+	ch := make(chan int, 3)
 
 	ch <- 1
 	ch <- 2
 	ch <- 3
 
+	close(ch)
+
+	fmt.Println(<-ch)
+	fmt.Println(<-ch)
 	fmt.Println(<-ch)
 	fmt.Println(<-ch)
 	fmt.Println("Done")

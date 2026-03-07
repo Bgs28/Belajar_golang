@@ -1,29 +1,29 @@
 package main
 
-// import (
-// 	"fmt"
-// 	"time"
-// )
+import (
+	"fmt"
+	"time"
+)
 
-// func main() {
-// 	ch1 := make(chan string)
-// 	ch2 := make(chan string)
+func main() {
+	ch1 := make(chan string)
+	ch2 := make(chan string)
 
-// 	go func() {
-// 		time.Sleep(1 * time.Second)
-// 		ch1 <- "Message From Channel 1"
-// 	}()
+	go func() {
+		time.Sleep(1 * time.Second)
+		ch1 <- "Message From Channel 1"
+	}()
 
-// 	go func() {
-// 		time.Sleep(2 * time.Second)
-// 		ch2 <- "Message From Channel 2"
-// 	}()
+	go func() {
+		time.Sleep(2 * time.Second)
+		ch2 <- "Message From Channel 2"
+	}()
 
-// 	select {
-// 	case msg1 := <-ch1:
-// 		fmt.Println(msg1)
+	select {
+	case msg1 := <-ch1:
+		fmt.Println(msg1)
 
-// 	case msg2 := <-ch2:
-// 		fmt.Println(msg2)
-// 	}
-// }
+	case msg2 := <-ch2:
+		fmt.Println(msg2)
+	}
+}

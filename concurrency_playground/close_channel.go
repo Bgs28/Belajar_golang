@@ -1,19 +1,19 @@
 package main
 
-// import "fmt"
+import "fmt"
 
-// func main() {
-// 	ch := make(chan int)
+func main() {
+	ch := make(chan int)
 
-// 	go func() {
-// 		for i := 1; i <= 5; i++ {
-// 			ch <- i
-// 		}
+	go func() {
+		for i := 1; i <= 5; i++ {
+			ch <- i
+		}
 
-// 		close(ch)
-// 	}()
+		close(ch)
+	}()
 
-// 	for value := range ch {
-// 		fmt.Println("Received:", value)
-// 	}
-// }
+	for value := range ch {
+		fmt.Println("Received:", value)
+	}
+}

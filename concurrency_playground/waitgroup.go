@@ -1,26 +1,26 @@
 package main
 
-// import (
-// 	"fmt"
-// 	"sync"
-// )
+import (
+	"fmt"
+	"sync"
+)
 
-// func worker(id int, wg *sync.WaitGroup){
-// 	defer wg.Done()
+func worker(id int, wg *sync.WaitGroup){
+	defer wg.Done()
 
-// 	fmt.Println("Worker", id, "done")
-// }
+	fmt.Println("Worker", id, "done")
+}
 
-// func main() {
-// 	var wg sync.WaitGroup
+func main() {
+	var wg sync.WaitGroup
 
-// 	for i := 1; i <= 3; i++ {
-// 		wg.Add(1)
+	for i := 1; i <= 3; i++ {
+		wg.Add(1)
 
-// 		go worker(i, &wg)
-// 	}
+		go worker(i, &wg)
+	}
 
-// 	wg.Wait()
+	wg.Wait()
 
-// 	fmt.Println("All Worker are finished")
-// }
+	fmt.Println("All Worker are finished")
+}

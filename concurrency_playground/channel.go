@@ -1,15 +1,15 @@
 package main
 
-// import "fmt"
+import "fmt"
 
-// func main() {
-// 	ch := make(chan string)
+func main() {
+	ch := make(chan string)
 
-// 	go func() {
-// 		ch <- "Hello Channel"
-// 	}()
+	go func() {
+		ch <- "Hello Channel"
+	}()
 
-// 	message := <-ch
+	message := <-ch
 
-// 	fmt.Println(message)
-// }
+	fmt.Println(message)
+}

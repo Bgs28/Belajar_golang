@@ -1,0 +1,26 @@
+{{ define "content" }}
+<h2>Product List</h2>
+
+<a href="/products/create">Tambah Product</a>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Action</th>
+  </tr>
+
+  {{range .}}
+  <tr>
+    <td>{{ .ID }}</td>
+    <td>{{ .Name }}</td>
+    <td>{{ .Price }}</td>
+    <td>
+      <a href="/products/edit?id={{ .ID }}"></a>
+      <a href="/products/delete?id={{ .ID }}"></a>
+    </td>
+  </tr>
+  {{ end }}
+</table>
+{{ end }}

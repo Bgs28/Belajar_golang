@@ -1,0 +1,21 @@
+{{ define "content" }}
+
+<h2>Product Form</h2>
+
+<form action="/product/save" method="post">
+  <input type="hidden" name="id" value="{{ .ID }}" />
+
+  <label>Name</label>
+  <input type="text" name="name" value="{{ .Name }}" />
+
+  <br /><br />
+
+  <label>Price</label>
+  <input type="number" name="price" value="{{ .Price }}" />
+
+  <br /><br />
+
+  <button type="submit">Save</button>
+</form>
+
+{{ end }}

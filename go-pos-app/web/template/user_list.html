@@ -1,0 +1,21 @@
+{{ define "content" }}
+
+<h2>User List</h2>
+
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Email</th>
+  </tr>
+
+  {{ range . }}
+
+  <tr>
+    <td>{{ .ID }}</td>
+    <td>{{ .Email }}</td>
+  </tr>
+
+  {{ end }}
+</table>
+
+{{ end }}
